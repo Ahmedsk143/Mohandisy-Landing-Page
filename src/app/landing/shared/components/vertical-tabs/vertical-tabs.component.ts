@@ -19,89 +19,89 @@ export class VerticalTabsComponent implements OnInit {
     this.loadTab1();
   }
   loadTab1() {
-    this.isActiveItem='tab1';
+    this.isActiveItem = 'tab1';
     this.sProviders = [
       {
         name: 'شركة إعمار للتشييد والبناء',
-        logo: '../../../../assets/images/home/spLogo-1.png',
+        logo: '../../../../assets/spLogo-1.png',
         genre: 'إستشارات هندسية, تصميم داخلى',
         location: 'السعودية, الرياض',
       },
       {
         name: 'شركة إعمار للتشييد والبناء',
-        logo: '../../../../assets/images/home/spLogo-1.png',
+        logo: '../../../../assets/spLogo-1.png',
         genre: 'إستشارات هندسية, تصميم داخلى',
         location: 'السعودية, الرياض',
       },
       {
         name: 'شركة إعمار للتشييد والبناء',
-        logo: '../../../../assets/images/home/spLogo-1.png',
+        logo: '../../../../assets/spLogo-1.png',
         genre: 'إستشارات هندسية, تصميم داخلى',
         location: 'السعودية, الرياض',
       },
       {
         name: 'شركة إعمار للتشييد والبناء',
-        logo: '../../../../assets/images/home/spLogo-1.png',
+        logo: '../../../../assets/spLogo-1.png',
         genre: 'إستشارات هندسية, تصميم داخلى',
         location: 'السعودية, الرياض',
       },
       {
         name: 'شركة إعمار للتشييد والبناء',
-        logo: '../../../../assets/images/home/spLogo-1.png',
+        logo: '../../../../assets/spLogo-1.png',
         genre: 'إستشارات هندسية, تصميم داخلى',
         location: 'السعودية, الرياض',
       },
       {
         name: 'شركة إعمار للتشييد والبناء',
-        logo: '../../../../assets/images/home/spLogo-1.png',
+        logo: '../../../../assets/spLogo-1.png',
         genre: 'إستشارات هندسية, تصميم داخلى',
         location: 'السعودية, الرياض',
       },
     ];
   }
   loadTab2() {
-    this.isActiveItem='tab2';
+    this.isActiveItem = 'tab2';
 
     this.sProviders = [
       {
         name: 'شركة إعمار للتشييد والبناءaaaaa',
-        logo: '../../../../assets/images/home/spLogo-1.png',
+        logo: '../../../../assets/spLogo-1.png',
         genre: 'إستشارات هندسية, تصميم داخلى',
         location: 'السعودية, الرياض',
       },
       {
         name: 'شركة إعمار للتشييد والبناء',
-        logo: '../../../../assets/images/home/spLogo-1.png',
+        logo: '../../../../assets/spLogo-1.png',
         genre: 'إستشارات هندسية, تصميم داخلى',
         location: 'السعودية, الرياض',
       },
       {
         name: 'شركة إعمار للتشييد والبناء',
-        logo: '../../../../assets/images/home/spLogo-1.png',
+        logo: '../../../../assets/spLogo-1.png',
         genre: 'إستشارات هندسية, تصميم داخلى',
         location: 'السعودية, الرياض',
       },
     ];
   }
   loadTab3() {
-    this.isActiveItem='tab3';
+    this.isActiveItem = 'tab3';
 
     this.sProviders = [
       {
         name: 'شركة إعمار للتشييد والبناءsssss',
-        logo: '../../../../assets/images/home/spLogo-1.png',
+        logo: '../../../../assets/spLogo-1.png',
         genre: 'إستشارات هندسية, تصميم داخلى',
         location: 'السعودية, الرياض',
       },
       {
         name: 'شركة إعمار للتشييد والبناء',
-        logo: '../../../../assets/images/home/spLogo-1.png',
+        logo: '../../../../assets/spLogo-1.png',
         genre: 'إستشارات هندسية, تصميم داخلى',
         location: 'السعودية, الرياض',
       },
       {
         name: 'شركة إعمار للتشييد والبناء',
-        logo: '../../../../assets/images/home/spLogo-1.png',
+        logo: '../../../../assets/spLogo-1.png',
         genre: 'إستشارات هندسية, تصميم داخلى',
         location: 'السعودية, الرياض',
       },

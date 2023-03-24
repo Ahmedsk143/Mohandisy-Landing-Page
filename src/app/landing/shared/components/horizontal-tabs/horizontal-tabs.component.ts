@@ -9,35 +9,35 @@ export class HorizontalTabsComponent implements OnInit {
   isActiveItem: string = 'tab1';
   prevWorks = [
     {
-      img: '../../../../assets/images/home/prevWork-1.png',
+      img: '../../../../assets/prevWork-1.png',
       title: 'مصاعد خارجية',
     },
     {
-      img: '../../../../assets/images/home/prevWork-2.png',
+      img: '../../../../assets/prevWork-2.png',
       title: 'مصاعد بدون حفر',
     },
     {
-      img: '../../../../assets/images/home/prevWork-3.png',
+      img: '../../../../assets/prevWork-3.png',
       title: 'مصاعد داخلية',
     },
     {
-      img: '../../../../assets/images/home/prevWork-4.png',
+      img: '../../../../assets/prevWork-4.png',
       title: 'مصاعد جيرليس',
     },
     {
-      img: '../../../../assets/images/home/prevWork-3.png',
+      img: '../../../../assets/prevWork-3.png',
       title: 'مصاعد داخلية',
     },
     {
-      img: '../../../../assets/images/home/prevWork-4.png',
+      img: '../../../../assets/prevWork-4.png',
       title: 'مصاعد جيرليس',
     },
     {
-      img: '../../../../assets/images/home/prevWork-1.png',
+      img: '../../../../assets/prevWork-1.png',
       title: 'مصاعد خارجية',
     },
     {
-      img: '../../../../assets/images/home/prevWork-2.png',
+      img: '../../../../assets/prevWork-2.png',
       title: 'مصاعد بدون حفر',
     },
   ];
@@ -47,14 +47,14 @@ export class HorizontalTabsComponent implements OnInit {
       para: 'هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.',
       name: 'أنس عبدالله',
       location: 'الإمارات العربية المتحدة',
-      img: '../../../../assets/images/home/Avatar.png',
+      img: '../../../../assets/Avatar.png',
     },
     {
       id: '2',
       para: 'هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.',
       name: 'سعود بن احمد',
       location: 'الإمارات العربية المتحدة',
-      img: '../../../../assets/images/home/Avatar1.png',
+      img: '../../../../assets/Avatar1.png',
     },
 
     {
@@ -62,28 +62,28 @@ export class HorizontalTabsComponent implements OnInit {
       para: 'هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.',
       name: 'راشد العلي',
       location: 'الإمارات العربية المتحدة',
-      img: '../../../../assets/images/home/Avatar2.png',
+      img: '../../../../assets/Avatar2.png',
     },
     {
       id: '4',
       para: 'هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.',
       name: 'علي بن عبدالله',
       location: 'الإمارات العربية المتحدة',
-      img: '../../../../assets/images/home/Avatar1.png',
+      img: '../../../../assets/Avatar1.png',
     },
     {
       id: '5',
       para: 'هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.',
       name: 'راشد العلي',
       location: 'الإمارات العربية المتحدة',
-      img: '../../../../assets/images/home/Avatar2.png',
+      img: '../../../../assets/Avatar2.png',
     },
     {
       id: '6',
       para: 'هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.',
       name: 'أنس عبدالله',
       location: 'الإمارات العربية المتحدة',
-      img: '../../../../assets/images/home/Avatar.png',
+      img: '../../../../assets/Avatar.png',
     },
   ];
   constructor() {}

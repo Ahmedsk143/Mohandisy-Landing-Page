@@ -10,22 +10,22 @@ export class SprovidersWorkComponent implements OnInit {
     {
       name: 'مجموعة أبراج سكنية',
       location: 'السعودية, مكة المكرمة',
-      img: '../../../../assets/images/home/Rectangle 1.png',
+      img: '../../../../assets/Rectangle 1.png',
     },
     {
       name: 'مجموعة أبراج سكنية',
       location: 'السعودية, مكة المكرمة',
-      img: '../../../../assets/images/home/Rectangle 1 (2).png',
+      img: '../../../../assets/Rectangle 1 (2).png',
     },
     {
       name: 'مجموعة أبراج سكنية',
       location: 'السعودية, مكة المكرمة',
-      img: '../../../../assets/images/home/Rectangle 2.png',
+      img: '../../../../assets/Rectangle 2.png',
     },
     {
       name: 'مجموعة أبراج سكنية',
       location: 'السعودية, مكة المكرمة',
-      img: '../../../../assets/images/home/Rectangle 3.png',
+      img: '../../../../assets/Rectangle 3.png',
     },
   ];
   constructor() {}

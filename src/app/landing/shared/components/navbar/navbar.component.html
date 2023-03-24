@@ -7,7 +7,7 @@
             src="../../../assets/logowhite.png"
             width="90%"
             height="90%"
-            routerLink="/home/homepage"
+            routerLink="/"
           />
         </li>
         <li
@@ -16,29 +16,23 @@
           (click)="openDialog()"
         >
           <button class="searchBtn" type="submit">
-            <img src="../../../../assets/images/home/searchIcon.png" alt="" />
+            <img src="../../../../assets/searchIcon.png" alt="" />
           </button>
         </li>
         <li class="nav-item">
-          <a
-            class="nav-link"
-            routerLink="/home/homepage"
-            routerLinkActive="active"
-            >{{ "nav.home" | translate }}</a
-          >
+          <a class="nav-link" routerLink="/" routerLinkActive="active">{{
+            "nav.home" | translate
+          }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/aboutUs" routerLinkActive="active">{{
+            "nav.aboutUs" | translate
+          }}</a>
         </li>
         <li class="nav-item">
           <a
             class="nav-link"
-            routerLink="/home/aboutUs"
-            routerLinkActive="active"
-            >{{ "nav.aboutUs" | translate }}</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            routerLink="/home/ourServices"
+            routerLink="/ourServices"
             routerLinkActive="active"
             >{{ "nav.ourServices" | translate }}</a
           >
@@ -46,7 +40,7 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            routerLink="/home/serviceProviders"
+            routerLink="/serviceProviders"
             routerLinkActive="active"
             >{{ "nav.serviceProviders" | translate }}</a
           >
@@ -54,7 +48,7 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            routerLink="/home/contactUs"
+            routerLink="/contactUs"
             routerLinkActive="active"
             >{{ "nav.contactUs" | translate }}</a
           >
@@ -62,7 +56,7 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            routerLink="/account/login"
+            routerLink="//account/login"
             routerLinkActive="active"
             >{{ "nav.signin" | translate }}</a
           >
@@ -74,8 +68,7 @@
           style="cursor: pointer"
         >
           <a class="nav-link disabled justify-content-between"
-            ><img src="../../../assets/images/Ellipse 3.svg" />&nbsp;اللغة
-            العربية
+            ><img src="../../../assets//Ellipse 3.svg" />&nbsp;اللغة العربية
           </a>
         </li>
         <li
@@ -95,14 +88,14 @@
   <div class="menu">
     <div class="menu__toggle justify-content-between">
       <img
-        src="../../../../assets/images/home/menuIcon.png"
+        src="../../../../assets/menuIcon.png"
         alt=""
         class="menu__bars"
         (click)="toggle()"
       />
-      <img src="../../../assets/logowhite.png" routerLink="/home/homepage" />
+      <img src="../../../assets/logowhite.png" routerLink="/" />
       <button class="searchBtn" type="submit" (click)="openDialog()">
-        <img src="../../../../assets/images/home/searchIcon.png" alt="" />
+        <img src="../../../../assets/searchIcon.png" alt="" />
       </button>
     </div>
     <ul
@@ -110,25 +103,19 @@
       [ngClass]="{ collapse: isCollapsed }"
     >
       <li class="nav-item">
-        <a
-          class="nav-link"
-          routerLink="/home/homepage"
-          routerLinkActive="active"
-          >{{ "nav.home" | translate }}</a
-        >
+        <a class="nav-link" routerLink="/" routerLinkActive="active">{{
+          "nav.home" | translate
+        }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/aboutUs" routerLinkActive="active">{{
+          "nav.aboutUs" | translate
+        }}</a>
       </li>
       <li class="nav-item">
         <a
           class="nav-link"
-          routerLink="/home/aboutUs"
-          routerLinkActive="active"
-          >{{ "nav.aboutUs" | translate }}</a
-        >
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          routerLink="/home/ourServices"
+          routerLink="/ourServices"
           routerLinkActive="active"
           >{{ "nav.ourServices" | translate }}</a
         >
@@ -136,23 +123,20 @@
       <li class="nav-item">
         <a
           class="nav-link"
-          routerLink="/home/serviceProviders"
+          routerLink="/serviceProviders"
           routerLinkActive="active"
           >{{ "nav.serviceProviders" | translate }}</a
         >
       </li>
       <li class="nav-item">
-        <a
-          class="nav-link"
-          routerLink="/home/contactUs"
-          routerLinkActive="active"
-          >{{ "nav.contactUs" | translate }}</a
-        >
+        <a class="nav-link" routerLink="/contactUs" routerLinkActive="active">{{
+          "nav.contactUs" | translate
+        }}</a>
       </li>
       <li class="nav-item">
         <a
           class="nav-link"
-          routerLink="/account/login"
+          routerLink="//account/login"
           routerLinkActive="active"
           >{{ "nav.signin" | translate }}</a
         >
@@ -161,7 +145,7 @@
         <a class="nav-link disabled justify-content-between" href="#"
           >&nbsp;اللغة العربية
         </a>
-        <img src="../../../assets/images/Ellipse 3.svg" />
+        <img src="../../../assets//Ellipse 3.svg" />
       </li>
     </ul>
   </div>

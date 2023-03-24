@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "ourServices": "Our Services",
+    "serviceProviders": "Service Providers",
+    "contactUs": "Contact Us",
+    "signin": "Sign in"
+  },
+  "header": {
+    "para": "Engineers platform is the link between service providers such as engineers, construction companies, designers and others with engineering services seekers in the Kingdom of Saudi Arabia and the Arab world.",
+    "button": "Sign up now"
+  },
+  "verticalTabs": {
+    "tab1": "All",
+    "tab2": "Companies",
+    "tab3": "Contractors"
+  },
+  "serviceProviders": "Service Providers",
+  "showAll": "Show all results",
+  "howWeWork": "How do we work",
+  "howWeWorkPara": "This corporate culture operates outside of the typical office structure. Staff often work together and there is an emphasis on brainstorming, feedback and innovation.",
+  "spWorks": "Our service providers' work",
+  "userReviews": "Our user reviews"
+}
