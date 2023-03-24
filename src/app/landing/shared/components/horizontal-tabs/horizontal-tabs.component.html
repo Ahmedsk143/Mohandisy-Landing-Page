@@ -1,0 +1,65 @@
+<div class="container">
+  <div class="tabs">
+    <nav class="tabs__nav">
+      <ul>
+        <li
+          class="tabs__nav__item"
+          [ngClass]="{ active: isActiveItem === 'tab1' }"
+          (click)="loadTab1()"
+        >
+          نظرة عامة
+        </li>
+        <li
+          class="tabs__nav__item"
+          [ngClass]="{ active: isActiveItem === 'tab2' }"
+          (click)="loadTab2()"
+        >
+          الأعمال السابقة
+        </li>
+        <li
+          class="tabs__nav__item"
+          [ngClass]="{ active: isActiveItem === 'tab3' }"
+          (click)="loadTab3()"
+        >
+          التقييمات
+        </li>
+      </ul>
+    </nav>
+    <div class="tabs__body general" *ngIf="isActiveItem == 'tab1'">
+      <div class="general__item">
+        <span>نطاق العمل:</span>
+        <p>المملكة العربية السعودية » منطقة الرياض‎</p>
+      </div>
+      <div class="general__item">
+        <span>نوع العمل: </span>
+        <p>مكتب هندسي</p>
+      </div>
+      <div class="general__item">
+        <span>تصنيف/إعتماد: </span>
+        <p>الهيئة السعوية للمقاولين</p>
+      </div>
+      <p>
+        شركة المدارات المتحدة شركة منشأة وطنية قائمة وفقاً لأنظمة المعمول بها في
+        المملكة العربية السعودية والمتخصصة في مجال المقاولات العامة وأعمال
+        الميكانيكا والكهرباء والتشطيبات الداخلية والخارجية والتي تساندها تجربة
+        وخبرة طويلة للقائمين عليها وهي مكتملة النواحي
+      </p>
+    </div>
+    <div class="tabs__body prev-work" *ngIf="isActiveItem == 'tab2'">
+      <div class="prev-work__card" *ngFor="let work of prevWorks">
+        <img [src]="work.img" alt="" />
+        <p>{{ work.title }}</p>
+      </div>
+    </div>
+    <div class="tabs__body reviews" *ngIf="isActiveItem == 'tab3'">
+      <div class="reviews__card" *ngFor="let review of reviews">
+        <app-review-card
+          [para]="review.para"
+          [name]="review.name"
+          [location]="review.location"
+          [imgSrc]="review.img"
+        ></app-review-card>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,100 @@
+<div class="container">
+  <div class="contact">
+    <div class="row">
+      <div class="col-12 col-xl-8">
+        <div class="contact__form">
+          <h1 class="contact__form__heading">تواصل معنا</h1>
+          <form (ngSubmit)="submit()" [formGroup]="contactForm">
+            <div class="row">
+              <div class="col-lg-6 mb-2">
+                <label class="form-label" for="username">اسم المستخدم</label>
+                <input
+                  type="text"
+                  id="username"
+                  class="form-control"
+                  name="username"
+                  formControlName="username"
+                  [class.is-invalid]="
+                    contactForm.get('username')!.invalid &&
+                    contactForm.get('username')!.touched
+                  "
+                  placeholder="اسم المستخدم"
+                />
+              </div>
+              <div class="col-lg-6 mb-2">
+                <label class="form-label" for="email">البريد الالكتروني</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  formControlName="email"
+                  class="form-control"
+                  placeholder="example@gmail.com"
+                  [class.is-invalid]="
+                    contactForm.get('email')!.invalid &&
+                    contactForm.get('email')!.touched
+                  "
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 mb-2">
+                <label class="form-label" for="phone">رقم الهاتف</label>
+                <input
+                  type="text"
+                  id="phone"
+                  class="form-control"
+                  name="phone"
+                  formControlName="phone"
+                  [class.is-invalid]="
+                    contactForm.get('phone')!.invalid &&
+                    contactForm.get('phone')!.touched
+                  "
+                  placeholder="مثال: 96652121212"
+                />
+              </div>
+              <div class="col-lg-6 mb-2">
+                <label class="form-label" for="serviceType">نوع الخدمة</label>
+                <select
+                  class="form-control"
+                  id="serviceType"
+                  name="serviceType"
+                  formControlName="serviceType"
+                  [class.is-invalid]="
+                    contactForm.get('serviceType')!.invalid &&
+                    contactForm.get('serviceType')!.touched
+                  "
+                >
+                  <option value=" مثال:شكوى, استفسار" selected disabled hidden>
+                    مثال:شكوى, استفسار
+                  </option>
+                  <option value="شكوى">شكوى</option>
+                  <option value="استفسار">استفسار</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mb-2">
+                <label class="form-label" for="username">اترك رسالتك</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  formControlName="message"
+                  rows="5"
+                  class="form-control py-4"
+                  placeholder="اكتب لنا شيء تود ارساله...."
+                ></textarea>
+              </div>
+            </div>
+            <button class="solidBtn">إرسال</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-12 d-none d-xl-block col-lg-4">
+        <div class="contact__img">
+          <img src="../../../../assets/images/home/contactImg.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

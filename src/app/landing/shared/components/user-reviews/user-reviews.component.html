@@ -1,0 +1,15 @@
+<div class="reviews">
+  <div class="container">
+    <h1 class="reviews__heading">{{ "userReviews" | translate }}</h1>
+    <owl-carousel-o [options]="customOptions" class="owl-rtl">
+      <ng-template carouselSlide *ngFor="let review of reviews">
+        <app-review-card
+          [para]="review.para"
+          [name]="review.name"
+          [location]="review.location"
+          [imgSrc]="review.img"
+        ></app-review-card
+      ></ng-template>
+    </owl-carousel-o>
+  </div>
+</div>

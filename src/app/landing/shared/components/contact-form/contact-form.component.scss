@@ -1,0 +1,21 @@
+.contact {
+  font-family: "Tajawal";
+  padding: 2rem 0;
+  font-weight: 400;
+  font-size: 20px;
+  color: #475569;
+  &__form {
+    &__heading {
+      font-weight: 800;
+      font-size: 32px;
+      text-align: right;
+      color: #18af9a;
+      margin-bottom: 2rem;
+    }
+  }
+  &__img {
+  }
+  .row {
+    margin-bottom: 48px;
+  }
+}

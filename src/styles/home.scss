@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none !important;
+}
+ul,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.solidBtn {
+  width: 285px;
+  height: 60px;
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  background: linear-gradient(360deg, #00816e 0%, #00dcbd 100%);
+}
+.solidBtn--2 {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  width: 90%;
+  background: #18af9a;
+  border: none;
+  outline: none;
+  padding: 12px;
+}
+.outlineBtn {
+  width: 285px;
+  height: 60px;
+  background: transparent;
+  border: 1px solid #18af9a;
+  color: #18af9a;
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+}
+.linkBtn {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #18af9a;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    color: #00816e;
+  }
+}
+.closeBtn {
+  cursor: pointer;
+}

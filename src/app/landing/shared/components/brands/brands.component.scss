@@ -1,0 +1,37 @@
+.brands {
+  padding: 48px 0;
+  background: #ecfdf5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.625rem;
+  font-family: "Tajawal";
+  margin-top: 3rem;
+  @media screen and (max-width: 950px) {
+    font-size: 0.5rem;
+  }
+  &__title {
+    font-weight: 800;
+    font-size: 3.2em;
+    text-align: center;
+    color: #18af9a;
+  }
+  &__para {
+    font-weight: 500;
+    font-size: 2.8em;
+    text-align: center;
+    color: #004057;
+  }
+  &__logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    img {
+      width: 110px;
+      @media screen and (max-width: 950px) {
+        width: 90px;
+      }
+    }
+  }
+}

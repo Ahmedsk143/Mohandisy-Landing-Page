@@ -1,0 +1,18 @@
+<div class="container my-5">
+  <div class="sp-work">
+    <h1 class="sp-work__heading">{{ "spWorks" | translate }}</h1>
+    <div class="sp-work__cards">
+      <div class="sp-work__card" *ngFor="let work of spWorks">
+        <img [src]="work.img" alt="" class="sp-work__card__img" />
+        <div class="sp-work__card__info-box">
+          <h4>{{ work.name }}</h4>
+          <div>
+            <img src="../../../../assets/images/home/locationIcon.png" alt="" />
+            <p>{{ work.location }}</p>
+          </div>
+        </div>
+        <button class="solidBtn--2">تصفح</button>
+      </div>
+    </div>
+  </div>
+</div>

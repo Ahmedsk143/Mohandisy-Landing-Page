@@ -1,0 +1,26 @@
+<div class="sp-card">
+  <div class="sp-card__logo">
+    <label>مكتب هندسي</label>
+    <img [src]="cover" alt="" />
+  </div>
+  <div class="sp-card__content">
+    <div class="sp-card__heading">
+      <img [src]="logo" alt="" />
+      <h3>{{ name }}</h3>
+    </div>
+    <p class="sp-card__para">{{ para }}</p>
+    <div class="sp-card__detail">
+      <img src="../../../../assets/images/home/locationIcon.png" alt="" />
+      <p>{{ location }}</p>
+    </div>
+    <div class="sp-card__detail">
+      <img src="../../../../assets/images/home/spGenreIcon.png" alt="" />
+      <p>{{ genre }}</p>
+    </div>
+    <div class="sp-card__detail">
+      <img src="../../../../assets/images/home/programming-arrows.png" alt="" />
+      <p>{{ industry }}</p>
+    </div>
+    <button class="outlineBtn" [routerLink]="navigateTo">إعرض المزيد</button>
+  </div>
+</div>

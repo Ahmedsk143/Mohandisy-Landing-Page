@@ -1,0 +1,94 @@
+<div class="services">
+  <div class="container">
+    <h1 class="services__heading">{{ "nav.ourServices" | translate }}</h1>
+    <div class="row g-4">
+      <div class="col-12 col-lg-6" *ngFor="let service of services">
+        <app-service-card
+          [heading]="service.heading"
+          [para]="service.para"
+          [img]="service.img"
+        ></app-service-card>
+      </div>
+    </div>
+    <a
+      routerLink="/home/ourServices"
+      class="services__more linkBtn"
+      *ngIf="hasMoreLink"
+    >
+      {{ "showAll" | translate }}
+      <img src="../../../../assets/images/home/linkBtnArrow.png" alt=""
+    /></a>
+  </div>
+</div>
+
+<!-- <div class="row" id="service">
+  <div class="col-12 mt-4"><h1 class="text-center">خدماتنا</h1></div>
+  <div
+    class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-flex p-4"
+  >
+    <div>
+      <p>
+        تقدم هذه الخدمة من أجل تحليل الوضع الحالي للمشاريع وبيان الحلول الممكنة
+        لتحسين جدوى المشروع وتقدير التكلفة الفنية.
+      </p>
+      <small>عرض التفاصيل</small
+      ><img
+        src="../../../../assets/icons/arrow-left.png"
+        width="15"
+        height="15"
+      />
+    </div>
+    <img src="../../../../assets/images/home/Rectangle 172.png" />
+  </div>
+  <div
+    class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-flex p-4"
+  >
+    <div>
+      <p>
+        تقدم هذه الخدمة من أجل تحليل الوضع الحالي للمشاريع وبيان الحلول الممكنة
+        لتحسين جدوى المشروع وتقدير التكلفة الفنية.
+      </p>
+      <small>عرض التفاصيل</small
+      ><img
+        src="../../../../assets/icons/arrow-left.png"
+        width="15"
+        height="15"
+      />
+    </div>
+    <img src="../../../../assets/images/home/Rectangle 170.png" />
+  </div>
+  <div
+    class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-flex p-4"
+  >
+    <div>
+      <p>
+        تقدم هذه الخدمة من أجل تحليل الوضع الحالي للمشاريع وبيان الحلول الممكنة
+        لتحسين جدوى المشروع وتقدير التكلفة الفنية.
+      </p>
+      <small>عرض التفاصيل</small
+      ><img
+        src="../../../../assets/icons/arrow-left.png"
+        width="15"
+        height="15"
+      />
+    </div>
+    <img src="../../../../assets/images/home/Rectangle 178.png" />
+  </div>
+  <div
+    class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-flex p-4"
+  >
+    <div>
+      <p>
+        تقدم هذه الخدمة من أجل تحليل الوضع الحالي للمشاريع وبيان الحلول الممكنة
+        لتحسين جدوى المشروع وتقدير التكلفة الفنية.
+      </p>
+      <small>عرض التفاصيل</small
+      ><img
+        src="../../../../assets/icons/arrow-left.png"
+        width="15"
+        height="15"
+      />
+    </div>
+    <img src="../../../../assets/images/home/Rectangle 180.png" />
+  </div>
+</div> -->

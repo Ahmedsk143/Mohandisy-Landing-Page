@@ -1,0 +1,206 @@
+<div class="container-fluid">
+  <div class="row main-nav">
+    <div class="col-12">
+      <ul class="nav justify-content-between">
+        <li class="nav-item">
+          <img
+            src="../../../assets/logowhite.png"
+            width="90%"
+            height="90%"
+            routerLink="/home/homepage"
+          />
+        </li>
+        <li
+          class="nav-item"
+          style="display: flex; align-items: center"
+          (click)="openDialog()"
+        >
+          <button class="searchBtn" type="submit">
+            <img src="../../../../assets/images/home/searchIcon.png" alt="" />
+          </button>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/home/homepage"
+            routerLinkActive="active"
+            >{{ "nav.home" | translate }}</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/home/aboutUs"
+            routerLinkActive="active"
+            >{{ "nav.aboutUs" | translate }}</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/home/ourServices"
+            routerLinkActive="active"
+            >{{ "nav.ourServices" | translate }}</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/home/serviceProviders"
+            routerLinkActive="active"
+            >{{ "nav.serviceProviders" | translate }}</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/home/contactUs"
+            routerLinkActive="active"
+            >{{ "nav.contactUs" | translate }}</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/account/login"
+            routerLinkActive="active"
+            >{{ "nav.signin" | translate }}</a
+          >
+        </li>
+        <li
+          class="nav-item"
+          (click)="changeLangage('ar')"
+          *ngIf="selectedLang == 'en'"
+          style="cursor: pointer"
+        >
+          <a class="nav-link disabled justify-content-between"
+            ><img src="../../../assets/images/Ellipse 3.svg" />&nbsp;اللغة
+            العربية
+          </a>
+        </li>
+        <li
+          class="nav-item"
+          (click)="changeLangage('en')"
+          *ngIf="selectedLang == 'ar'"
+          style="cursor: pointer"
+        >
+          <a class="nav-link disabled justify-content-between"
+            >English&nbsp;<img src="../../../assets/icons/united-kingdom.png" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="menu">
+    <div class="menu__toggle justify-content-between">
+      <img
+        src="../../../../assets/images/home/menuIcon.png"
+        alt=""
+        class="menu__bars"
+        (click)="toggle()"
+      />
+      <img src="../../../assets/logowhite.png" routerLink="/home/homepage" />
+      <button class="searchBtn" type="submit" (click)="openDialog()">
+        <img src="../../../../assets/images/home/searchIcon.png" alt="" />
+      </button>
+    </div>
+    <ul
+      class="menu__nav nav justify-content-between"
+      [ngClass]="{ collapse: isCollapsed }"
+    >
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLink="/home/homepage"
+          routerLinkActive="active"
+          >{{ "nav.home" | translate }}</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLink="/home/aboutUs"
+          routerLinkActive="active"
+          >{{ "nav.aboutUs" | translate }}</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLink="/home/ourServices"
+          routerLinkActive="active"
+          >{{ "nav.ourServices" | translate }}</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLink="/home/serviceProviders"
+          routerLinkActive="active"
+          >{{ "nav.serviceProviders" | translate }}</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLink="/home/contactUs"
+          routerLinkActive="active"
+          >{{ "nav.contactUs" | translate }}</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLink="/account/login"
+          routerLinkActive="active"
+          >{{ "nav.signin" | translate }}</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled justify-content-between" href="#"
+          >&nbsp;اللغة العربية
+        </a>
+        <img src="../../../assets/images/Ellipse 3.svg" />
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        (click)="basicNav.toggle()"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div
+        class="collapse navbar-collapse"
+        id="navbarNav"
+        mdbCollapse
+        #basicNav="mdbCollapse"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
+              >Disabled</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>  -->

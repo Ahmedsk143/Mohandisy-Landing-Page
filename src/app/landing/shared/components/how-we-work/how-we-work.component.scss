@@ -1,0 +1,77 @@
+.how-we-work {
+  background: #ffffff;
+  padding: 3rem 0px;
+  text-align: center;
+  font-family: "Tajawal";
+
+  &__heading {
+    font-weight: 800;
+    font-size: 2rem;
+    color: #18af9a;
+  }
+  &__para {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #475569;
+    margin: 1rem 0 2rem 0;
+  }
+  &__steps {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+    &__img {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+  &__step {
+    width: 20%;
+    position: relative;
+    @media screen and (max-width: 992px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 567px) {
+      width: 50%;
+    }
+    &__arrow {
+      position: absolute;
+      &.arrow-top {
+        top: 8%;
+        left: -16%;
+      }
+      &.arrow-bottom {
+        top: 21%;
+        left: -19%;
+        @media screen and (max-width: 992px) {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 1200px) {
+        width: 60px;
+      }
+    }
+    &__img {
+      background: #d1fae5;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+    &__title {
+      font-weight: 700;
+      font-size: 1rem;
+      color: #004057;
+      margin: 24px 0 12px 0;
+    }
+    &__para {
+      font-weight: 400;
+      font-size: 13px;
+      color: #004057;
+    }
+  }
+}

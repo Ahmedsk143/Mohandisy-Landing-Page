@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="tabs">
+    <nav class="tabs__nav">
+      <ul>
+        <h1 class="tabs__heading">{{ "serviceProviders" | translate }}</h1>
+        <li
+          class="tabs__nav__item"
+          [ngClass]="{ active: isActiveItem === 'tab1' }"
+          (click)="loadTab1()"
+        >
+          {{ "verticalTabs.tab1" | translate }}
+        </li>
+        <li
+          class="tabs__nav__item"
+          [ngClass]="{ active: isActiveItem === 'tab2' }"
+          (click)="loadTab2()"
+        >
+          {{ "verticalTabs.tab2" | translate }}
+        </li>
+        <li
+          class="tabs__nav__item"
+          [ngClass]="{ active: isActiveItem === 'tab3' }"
+          (click)="loadTab3()"
+        >
+          {{ "verticalTabs.tab3" | translate }}
+        </li>
+      </ul>
+      <a routerLink="/home/serviceProviders" class="linkBtn"
+        >{{ "showAll" | translate }}
+        <img src="../../../../assets/images/home/linkBtnArrow.png" alt="" />
+      </a>
+    </nav>
+    <div class="tabs__body">
+      <div class="tabs__card" *ngFor="let provider of sProviders">
+        <div class="tabs__card__heading">
+          <img [src]="provider.logo" alt="logo" />
+          <p>{{ provider.name }}</p>
+        </div>
+        <div class="tabs__card__detail">
+          <img src="../../../../assets/images/home/spGenreIcon.png" alt="" />
+          <p>{{ provider.genre }}</p>
+        </div>
+        <div class="tabs__card__detail">
+          <img src="../../../../assets/images/home/locationIcon.png" alt="" />
+          <p>{{ provider.location }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
